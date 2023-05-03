@@ -5,9 +5,7 @@ export default function ProjectBox({ img, title, text, action}) {
   return (
     <Wrapper>
       <ImgBtn className="aniamte pointer">
-        <img style={{
-          objectFit: 'contain'
-        }} className="radius8" src={img} alt="project" />
+        <img src={img} alt="project" />
       </ImgBtn>
       <h3 className="font20 extraBold">{title}</h3>
       <p className="font13">{text}</p>
@@ -17,11 +15,14 @@ export default function ProjectBox({ img, title, text, action}) {
 
 const Wrapper = styled.div`
   width: 100%;
+  height: 400px;
   margin-top: 30px;
   img {
     width: 100%;
-    height: auto;
+    height: 360px;
     margin: 20px 0;
+    object-fit: cover;
+    border-radius: 20px;
   }
   h3 {
     padding-bottom: 10px;
