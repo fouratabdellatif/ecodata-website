@@ -5,9 +5,9 @@ import ProjectBox from "../Elements/ProjectBox";
 import FullButton from "../Buttons/FullButton";
 // Assets
 import TeamImg1 from "../../assets/img/team/fourat.jpg";
-import TeamImg2 from "../../assets/img/team/wassim.jpg";
-import TeamImg3 from "../../assets/img/team/3.png";
-import TeamImg4 from "../../assets/img/team/4.png";
+import TeamImg2 from "../../assets/img/team/wassim02.jpg";
+import TeamImg3 from "../../assets/img/team/arij.jpg";
+import TeamImg4 from "../../assets/img/team/wadie.jpg";
 import AddImage2 from "../../assets/img/add/add2.png";
 
 export default function Team() {

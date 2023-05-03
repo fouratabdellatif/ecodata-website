@@ -4,8 +4,10 @@ import styled from "styled-components";
 export default function ProjectBox({ img, title, text, action}) {
   return (
     <Wrapper>
-      <ImgBtn className="aniamte pointer" onClick={action ? () => action() : null}>
-        <img className="radius8" src={img} alt="project"></img>
+      <ImgBtn className="aniamte pointer">
+        <img style={{
+          objectFit: 'contain'
+        }} className="radius8" src={img} alt="project" />
       </ImgBtn>
       <h3 className="font20 extraBold">{title}</h3>
       <p className="font13">{text}</p>
@@ -31,7 +33,7 @@ const ImgBtn = styled.button`
   outline: none;
   padding: 0px;
   margin: 0px;
-  :hover > img {
+  /* :hover > img {
     opacity: 0.5;
-  }
+  } */
 `;
