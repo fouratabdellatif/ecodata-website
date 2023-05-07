@@ -5,28 +5,37 @@ import { Link } from "react-scroll";
 import LogoImg from "../../assets/svg/Logo";
 
 export default function Contact() {
-
   const getCurrentYear = () => {
     return new Date().getFullYear();
-  }
+  };
 
   return (
     <Wrapper>
-      <div className="darkBg">
-        <div className="container">
-          <InnerWrapper className="flexSpaceCenter" style={{ padding: "30px 0" }}>
-            <Link className="flexCenter animate pointer" to="home" smooth={true} offset={-80}>
-              <LogoImg />
-            </Link>
-            <StyleP className="whiteColor font13">
-              © {getCurrentYear()} - <span className="purpleColor font13">Ecodata</span> All Right Reserved
-            </StyleP>
+      <div className="container">
+        <InnerWrapper className="flexSpaceCenter" style={{ padding: "30px 0" }}>
+          <Link
+            className="flexCenter animate pointer"
+            to="home"
+            smooth={true}
+            offset={-80}
+          >
+            <LogoImg />
+          </Link>
+          <StyleP className="font13">
+            © {getCurrentYear()} -{" "}
+            <span className="purpleColor font13"><a href="/">Ecodata</a></span> - All Rights
+            Reserved
+          </StyleP>
 
-            <Link className="whiteColor animate pointer font13" to="home" smooth={true} offset={-80}>
-              Back to top
-            </Link>
-          </InnerWrapper>
-        </div>
+          <Link
+            className="animate pointer font13"
+            to="home"
+            smooth={true}
+            offset={-80}
+          >
+            Back to top
+          </Link>
+        </InnerWrapper>
       </div>
     </Wrapper>
   );

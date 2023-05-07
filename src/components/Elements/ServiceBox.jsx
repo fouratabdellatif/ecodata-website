@@ -1,29 +1,29 @@
 import React from "react";
 import styled from "styled-components";
 // Assets
-import RollerIcon from "../../assets/svg/Services/RollerIcon";
-import MonitorIcon from "../../assets/svg/Services/MonitorIcon";
-import BrowserIcon from "../../assets/svg/Services/BrowserIcon";
-import PrinterIcon from "../../assets/svg/Services/PrinterIcon";
+import dataIcon from "../../assets/svg/Services/data.png";
+import consultingIcon from "../../assets/svg/Services/consulting.png";
+import dashboardingIcon from "../../assets/svg/Services/dashboarding.png";
+import predictionIcon from "../../assets/svg/Services/prediction.png";
 
 export default function ServiceBox({icon, title, subtitle}) {
   let getIcon;
 
   switch (icon) {
-    case "roller":
-      getIcon = <RollerIcon />;
+    case "data":
+      getIcon = <Icon src={dataIcon} alt="data analysis" />;
       break;
-    case "monitor":
-      getIcon = <MonitorIcon />;
+    case "consulting":
+      getIcon = <Icon src={consultingIcon} alt="consulting" />;
       break;
-    case "browser":
-      getIcon = <BrowserIcon />;
+    case "dashboarding":
+      getIcon = <Icon src={dashboardingIcon} alt="dashboarding" />;
       break;
-    case "printer":
-      getIcon = <PrinterIcon />;
+    case "prediction":
+      getIcon = <Icon src={predictionIcon} alt="prediction" />;
       break;
     default:
-      getIcon = <RollerIcon />;
+      getIcon = <Icon src={dataIcon} alt="data analysis" />;
       break;
   }
 
@@ -59,3 +59,7 @@ const SubtitleStyle = styled.p`
   max-width: 300px;
   margin: 0 auto;
 `;
+
+const Icon = styled.img`
+  width: 50px;
+`

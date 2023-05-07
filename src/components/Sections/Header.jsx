@@ -15,10 +15,10 @@ export default function Header() {
         <div>
           <h1 className="extraBold font60">We are ECODATA.</h1>
           <HeaderP className="font13 semiBold">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum.
+          Our passion lies in data analysis,
+Turning your numbers into business catalysts.
+With cutting-edge tools and expert know-how,
+Ecodata is the partner to help you grow.
           </HeaderP>
           <BtnWrapper>
             <Link
@@ -97,6 +97,7 @@ const RightSide = styled.div`
   }
 `;
 const HeaderP = styled.div`
+  text-align: justify;
   max-width: 470px;
   padding: 15px 0 50px 0;
   line-height: 1.5rem;

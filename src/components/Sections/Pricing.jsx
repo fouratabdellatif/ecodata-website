@@ -11,9 +11,7 @@ export default function Pricing() {
           <HeaderInfo>
             <h1 className="font40 extraBold">Check Our Pricing</h1>
             <p className="font13">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-              <br />
-              labore et dolore magna aliquyam erat, sed diam voluptua.
+            Discover the perfect plan for your business - check our pricing today.
             </p>
           </HeaderInfo>
           <TablesWrapper className="flexSpaceNull">

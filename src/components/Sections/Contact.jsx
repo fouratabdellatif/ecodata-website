@@ -1,9 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 // Assets
-import ContactImg1 from "../../assets/img/contact-1.png";
-import ContactImg2 from "../../assets/img/contact-2.png";
-import ContactImg3 from "../../assets/img/contact-3.png";
+import ContactImg3 from "../../assets/img/contact.png";
 
 export default function Contact() {
   return (
@@ -13,9 +11,7 @@ export default function Contact() {
           <HeaderInfo>
             <h1 className="font40 extraBold">Let's get in touch</h1>
             <p className="font13">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-              <br />
-              labore et dolore magna aliquyam erat, sed diam voluptua.
+            Don't let your data go to waste - get in touch with us to see how we can help.
             </p>
           </HeaderInfo>
           <div className="row" style={{ paddingBottom: "30px" }}>
@@ -34,17 +30,13 @@ export default function Contact() {
               </SumbitWrapper>
             </div>
             <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 flex">
-              <div style={{ width: "50%" }} className="flexNullCenter flexColumn">
-                <ContactImgBox>
-                  <img src={ContactImg1} alt="office" className="radius6" />
-                </ContactImgBox>
-                <ContactImgBox>
-                  <img src={ContactImg2} alt="office" className="radius6" />
-                </ContactImgBox>
-              </div>
-              <div style={{ width: "50%" }}>
-                <div style={{ marginTop: "100px" }}>
-                  <img src={ContactImg3} alt="office" className="radius6" />
+              <div style={{ display: 'block' }}>
+                <div style={{ width: "100%", margin: "50px" }}>
+                  <img style={{
+                    width: '600px',
+                    height: '380px',
+                    objectFit: 'cover'
+                  }} src={ContactImg3} alt="office" className="radius6" />
                 </div>
               </div>
             </div>
@@ -92,18 +84,13 @@ const ButtonInput = styled.input`
   outline: none;
   color: #fff;
   :hover {
-    background-color: #580cd2;
+    background-color: #28589C;
     border: 1px solid #336dbf;
     color: #fff;
   }
   @media (max-width: 991px) {
     margin: 0 auto;
   }
-`;
-const ContactImgBox = styled.div`
-  max-width: 180px; 
-  align-self: flex-end; 
-  margin: 10px 30px 10px 0;
 `;
 const SumbitWrapper = styled.div`
   @media (max-width: 991px) {
