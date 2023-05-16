@@ -3,7 +3,7 @@ import styled from "styled-components";
 // Components
 import FullButton from "../Buttons/FullButton";
 // Assets
-import Dashboard from "../../assets/img/dashboard.png";
+import Dashboard from "../../assets/img/dashboard1.png";
 import { Link } from "react-scroll";
 
 export default function Solution() {
@@ -20,7 +20,7 @@ export default function Solution() {
             <Advertising className="flexSpaceCenter">
               <AddLeft>
                 <h4 className="font15 semiBold">A few words about</h4>
-                <h2 className="font40 extraBold">Our New Brand Solution</h2>
+                <h2 className="font40 extraBold">Our Brand New Solution</h2>
                 <p className="font12">
                   From data collection to visualization, our dashboard solution
                   has you covered. Empower your team with our data analysis
@@ -31,10 +31,18 @@ export default function Solution() {
                   style={{ margin: "30px 0" }}
                 >
                   <div style={{ width: "190px" }}>
-                    <FullButton
-                      title="Get Started"
-                      action={() => alert("clicked")}
-                    />
+                    <Link
+                      activeClass="active"
+                      style={{ padding: "10px 15px" }}
+                      to="pricing"
+                      spy={true}
+                      smooth={true}
+                      offset={-80}
+                    >
+                      <FullButton
+                        title="Check our pricing"
+                      />
+                    </Link>
                   </div>
                   <div style={{ width: "190px", marginLeft: "15px" }}>
                     <Link
@@ -45,10 +53,7 @@ export default function Solution() {
                       smooth={true}
                       offset={-80}
                     >
-                      <FullButton
-                        title="Contact Us"
-                        border
-                      />
+                      <FullButton title="Contact Us" border />
                     </Link>
                   </div>
                 </ButtonsRow>
@@ -57,7 +62,9 @@ export default function Solution() {
                 <AddRightInner>
                   <div className="flexNullCenter">
                     <AddImgWrapp1 className="flexCenter">
-                      <img src={Dashboard} alt="dashboard" />
+                      <img style={{
+                        objectFit: 'contain',
+                      }} src={Dashboard} alt="dashboard" />
                     </AddImgWrapp1>
                   </div>
                 </AddRightInner>
@@ -129,7 +136,7 @@ const AddImgWrapp1 = styled.div`
   margin: 0 6% 10px 6%;
   img {
     width: 600px;
-    height: 400px;
+    height: auto;
     border-radius: 1rem;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);

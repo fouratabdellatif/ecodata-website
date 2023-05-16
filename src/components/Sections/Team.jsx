@@ -4,7 +4,7 @@ import styled from "styled-components";
 import ProjectBox from "../Elements/ProjectBox";
 // Assets
 import TeamImg1 from "../../assets/img/team/fourat.jpg";
-import TeamImg2 from "../../assets/img/team/wassim02.jpg";
+import TeamImg2 from "../../assets/img/team/wassim03.jpg";
 import TeamImg3 from "../../assets/img/team/arij.jpg";
 import TeamImg4 from "../../assets/img/team/wadie.jpg";
 

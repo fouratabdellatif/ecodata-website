@@ -15,7 +15,7 @@ export default function Services() {
       <div className="whiteBg" style={{ padding: "20px 0" }}>
         <div className="container">
           <HeaderInfo>
-            <h1 className="font40 extraBold">Our Awesome Services</h1>
+            <h1 className="font40 extraBold">Our Creative Services</h1>
             <p className="font13">
             Let us help you achieve your goals with our comprehensive range of services.
             </p>

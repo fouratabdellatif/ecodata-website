@@ -18,15 +18,12 @@ export default function Pricing() {
             <TableBox>
               <PricingTable
                 icon="roller"
-                price="$29,99/mo"
-                title="Starter"
-                text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
+                price="$9,99/mo"
+                title="Basic"
+                text="Get to know and try our services"
                 offers={[
-                  { name: "Product Offer", cheked: true },
-                  { name: "Offer", cheked: true },
-                  { name: "Product Offer #2", cheked: false },
-                  { name: "Product", cheked: false },
-                  { name: "Product Offer", cheked: false },
+                  { name: "Access to basic statistics", cheked: true },
+                  { name: "Stand-alone license", cheked: false },
                 ]}
                 action={() => alert("clicked")}
               />
@@ -34,15 +31,12 @@ export default function Pricing() {
             <TableBox>
               <PricingTable
                 icon="monitor"
-                price="$49,99/mo"
-                title="Basic"
-                text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
+                price="$59,99/mo"
+                title="Starter"
+                text="The ideal entry-level account for individual users"
                 offers={[
-                  { name: "Product Offer", cheked: true },
-                  { name: "Offer", cheked: true },
-                  { name: "Product Offer #2", cheked: true },
-                  { name: "Product", cheked: true },
-                  { name: "Product Offer", cheked: false },
+                  { name: "Full access to all statistics", cheked: true },
+                  { name: "Stand-alone license", cheked: true },
                 ]}
                 action={() => alert("clicked")}
               />
@@ -50,15 +44,13 @@ export default function Pricing() {
             <TableBox>
               <PricingTable
                 icon="browser"
-                price="$59,99/mo"
-                title="Golden"
-                text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
+                price="$999,99/mo"
+                title="Exclusive"
+                text="Our Company Solution"
                 offers={[
-                  { name: "Product Offer", cheked: true },
-                  { name: "Offer", cheked: true },
-                  { name: "Product Offer #2", cheked: true },
-                  { name: "Product", cheked: true },
-                  { name: "Product Offer", cheked: true },
+                  { name: "All functions of the Starter Account", cheked: true },
+                  { name: "Full access to all statistics", cheked: true },
+                  { name: "Stand-alone license", cheked: true },
                 ]}
                 action={() => alert("clicked")}
               />
